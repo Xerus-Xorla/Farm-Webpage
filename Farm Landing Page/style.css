@@ -1,0 +1,150 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #1f2933;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f2933;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #22c55e;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.45),
+        rgba(0, 0, 0, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.hero-content {
+    text-align: center;
+    color: #ffffff;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Glass Button */
+.cta-btn {
+    padding: 14px 35px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover State */
+.cta-btn:hover {
+    background: rgba(34, 197, 94, 0.8);
+    transform: translateY(-3px);
+}
+
+/* Active State */
+.cta-btn:active {
+    transform: scale(0.95);
+}
+
+/* Two Column Section */
+.about {
+    padding: 80px 40px;
+    background-color: #f9fafb;
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #374151;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+}
